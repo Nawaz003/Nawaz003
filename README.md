@@ -1,10 +1,26 @@
-- 👋 Hi, I’m @Nawaz003
-- 👀 I’m interested in Coding
-- 🌱 I’m currently learning dotnet core Microservices
-- 💞️ I’m looking to collaborate on GIT
-- 📫 How to reach me nawaz003@gmail.com
+Instructions to Run 
 
-<!---
-Nawaz003/Nawaz003 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+cd ~\Point72_Assessment\Trade_Presentation
+
+dotnet restore Point72_Assessment.sln
+
+dotnet build Point72_Assessment.sln
+
+dotnet run Point72_Assessment.sln
+
+
+
+Access Swagger UI at: http://localhost:5055/swagger/index.html
+
+
+API Endpoints
+Trades
+POST /api/trades - Create a new trade
+GET /api/trades - Get all trades
+GET /api/trades/{id} - Get trade by ID
+GET /api/trades/symbol/{symbol} - Get trades by symbol
+
+Positions
+GET /api/positions - Get all positions
+GET /api/positions/{symbol} - Get position for a symbol
+
